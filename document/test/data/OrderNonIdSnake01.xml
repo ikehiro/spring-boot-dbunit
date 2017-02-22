@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset>
+	<t_order company_code="C778" order_infomation="GN-001" create_user_id="TESTUSER" create_date_time="2017-02-22" update_user_id="TESTUSER" update_date_time="2017-02-22" version_number="0" logical_delete_flag="0"/>
+	<t_order company_code="C778" order_infomation="GN-002" create_user_id="TESTUSER" create_date_time="2017-02-22" update_user_id="TESTUSER" update_date_time="2017-02-22" version_number="0" logical_delete_flag="0"/>
+	<t_order company_code="C778" order_infomation="GN-003" create_user_id="TESTUSER" create_date_time="2017-02-22" update_user_id="TESTUSER" update_date_time="2017-02-22" version_number="0" logical_delete_flag="0"/>
+	<t_order company_code="C800" order_infomation="GN-0000" create_user_id="TESTUSER" create_date_time="2017-02-22" update_user_id="TESTUSER" update_date_time="2017-02-22" version_number="0" logical_delete_flag="0"/>
+	<t_order company_code="CZX1" order_infomation="GNT-0000" create_user_id="TESTUSER" create_date_time="2017-02-22" update_user_id="TESTUSER" update_date_time="2017-02-22" version_number="0" logical_delete_flag="0"/>
+</dataset>
