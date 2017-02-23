@@ -44,4 +44,10 @@ public class DatabaseServiceImpl implements DatabaseService {
 		return repository.count();
 	}
 
+	public <R, T> T save(final Class<R> repoClass, final T entity) {
+		CrudRepository<T, Serializable> repository = getRepository(repoClass);
+
+		return repository.save(entity);
+	}
+
 }

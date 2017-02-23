@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import project.kage.example.spring.dbunit.DbUnitTestConfiguration;
+import project.kage.example.spring.dbunit.TestConfiguration;
 
 /**
  * @author papa
@@ -18,7 +18,7 @@ import project.kage.example.spring.dbunit.DbUnitTestConfiguration;
  */
 @RunWith(SpringRunner.class)
 // @ContextConfiguration(classes = { SpringBootDbunitApplicationTests.class }​)
-@ContextConfiguration(classes = { DbUnitTestConfiguration.class })
+@ContextConfiguration(classes = { TestConfiguration.class })
 public class OrderRepositoryTest {
 
 	@Autowired
