@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query-definition>
+  <toplevlel-entity>
+    <target-entity entity="car-entity" />
+  </toplevlel-entity>
+
+  <entity-definition name="car-entity">
+    <base-dto dto="body-dto"/>
+    <child-entity key="engine" enity="engine-entity"/>
+    <array-entity key="tire"  dto="tire-dto" occurs="4" required="true" />
+    <array-entity key="wheel"  dto="wheel-dto" occurs="4" required="true" />
+    <array-entity key="speaker" />
+  </entity-definition>
+  
+  <entity-definition name="engine-entity">
+      <base-dto dto="engine-dto"/>
+  </entity-definition>
+</query-definition>

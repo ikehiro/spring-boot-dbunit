@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="query-definition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="toplevlel-entity" />
+        <xs:element maxOccurs="1" ref="entity-definition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="toplevlel-entity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="target-entity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="target-entity">
+    <xs:complexType>
+      <xs:attribute name="entity" use="required" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="entity-definition">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="base-dto" />
+        <xs:element ref="child-entity" maxOccurs="unbounded" />
+        <xs:element ref="array-entity" maxOccurs="unbounded" />
+      </xs:choice>
+      <xs:attribute name="name" use="required" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="base-dto">
+    <xs:complexType>
+      <xs:attribute name="dto" use="required" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="child-entity">
+    <xs:complexType>
+      <xs:attribute name="enity" use="required" type="xs:string" />
+      <xs:attribute name="key" use="required" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="array-entity">
+    <xs:complexType>
+      <xs:attribute name="entity" use="required" type="xs:string" />
+      <xs:attribute name="key" use="required" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
